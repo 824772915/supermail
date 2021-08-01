@@ -1,0 +1,167 @@
+<template>
+  <div class="wrapper">
+    <div class="content">
+    <ul>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+            <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+            <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+            <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+            <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+            <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+            <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+            <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+            <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+            <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+            <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+            <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+            <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+      <li>1111</li>
+    </ul>
+    </div>
+  </div>
+</template>
+
+<script>
+  import BScroll from 'better-scroll'
+  export default {
+    name: "Category",
+    data(){
+      return{
+        scroll:null
+      }
+    },
+    mounted(){
+     this.scroll = new BScroll('.wrapper',{
+       probeType:3,
+       pullUpLoad:true
+      })
+      this.scroll.on('scroll',(position)=>{
+        console.log(position);
+      })
+      this.scroll.on('pullingUp',()=>{
+        console.log("上啦加载更多");
+      })
+    }
+  }
+</script>
+
+<style scoped>
+.wrapper{
+  height: 150px;
+  background-color: red;
+}
+</style>
